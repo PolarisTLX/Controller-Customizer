@@ -42,7 +42,21 @@ body::after {
   padding-bottom:100px;
 }
 .logo {
-  display: inline;
+  display: block;
+  margin: auto;
   height: 3em;
+}
+.logo-caption {
+  float: left;
+  text-align: center;
   margin: 0 2em;
 }
+.logo-container {
+  margin: 0 3%;
+}
+/* figure{
+
+}
+figcaption{
+
+} */
