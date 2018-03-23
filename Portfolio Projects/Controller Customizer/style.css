@@ -1,8 +1,21 @@
 body {
-  background-image: url("media/images/mass-effect-background.jpg");
+  /* background-image: url("media/images/mass-effect-background.jpg"); */
+  background-color: blue;
   background-size: cover;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
+}
+
+body::after {
+  content: "";
+  background: url("media/images/mass-effect-background.jpg");
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 /* NOTE THIS NEEDS FIXING */
@@ -11,7 +24,6 @@ body {
   background-color: rgba(31,31,31,0.1);
 } */
 
-
 #controller {
   position: fixed;
   top: 50%;
@@ -19,4 +31,18 @@ body {
   transform: translate(-50%, -50%);
   /* margin: auto; */
   height: 15em;
+}
+
+.footer {
+  background-color: grey;
+  position: fixed; /* Fixed instead of absolute fixes the scrolling issue. */
+  bottom: 0;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom:100px;
+}
+.logo {
+  display: inline;
+  height: 3em;
+  margin: 0 2em;
 }
