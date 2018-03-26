@@ -1,12 +1,12 @@
 body {
-  /* background-image: url("media/images/mass-effect-background.jpg"); */
+  background-image: url("media/images/dark-transparent-background.png"), url("media/images/mass-effect-background.jpg");
   background-color: blue;
   background-size: cover;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
 }
 
-body::after {
+/* body::after {
   content: "";
   background: url("media/images/mass-effect-background.jpg");
   opacity: 0.4;
@@ -14,9 +14,9 @@ body::after {
   left: 0;
   bottom: 0;
   right: 0;
-  position: absolute;
+  position: fixed;
   z-index: -1;
-}
+} */
 
 /* NOTE THIS NEEDS FIXING */
 /*this is just to reduce opacity of background images*/
@@ -34,7 +34,7 @@ body::after {
 }
 
 .footer {
-  background-color: grey;
+  background-color: rgb(30, 30, 30);
   position: fixed; /* Fixed instead of absolute fixes the scrolling issue. */
   bottom: 0;
   width: 100%;
@@ -47,6 +47,7 @@ body::after {
   height: 3em;
 }
 .logo-caption {
+  color: rgba(256, 256, 256, 0.5);
   float: left;
   text-align: center;
   margin: 0 2em;
@@ -60,8 +61,8 @@ body::after {
 .highlight {
   transition: all 0.2s;
   position: absolute;
-  background: white;
+  background: rgba(256, 256, 256, 0.6);
   display: block;
   /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
-  /* z-index: -1; */
+  z-index: -1;
 }
