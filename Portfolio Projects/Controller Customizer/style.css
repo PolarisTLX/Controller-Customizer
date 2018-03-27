@@ -51,6 +51,10 @@ body {
   float: left;
   text-align: center;
   margin: 0 2em;
+  -webkit-filter: invert(50%);
+}
+.logo-caption:hover{
+  -webkit-filter: none;
 }
 .logo-container {
   margin: 0 3%;
@@ -65,4 +69,22 @@ body {
   display: block;
   /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
   z-index: -1;
+  /* border-radius: 5px; */
+}
+.highlight::before, .highlight::after {
+  content: "";
+  position: absolute;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+.highlight::before {
+  width: 100%;
+  bottom: 100%;
+  border-bottom: 15px solid  rgba(256, 256, 256, 0.6);
+  /* border-radius: 5px; */
+}
+.highlight::after {
+  width: 100%;
+  top: 100%;
+  border-top: 15px solid  rgba(256, 256, 256, 0.6);
 }
