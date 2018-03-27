@@ -1,7 +1,8 @@
 // const logos = document.getElementsByClassName("logo-caption");
 const logos = document.querySelectorAll('.logo-caption');
-// console.log(logos);
-// console.log(logos[0]);
+//console.log(logos);
+//console.log(logos[0]);
+
 const highlight = document.createElement('span');
 const footer = document.querySelector('.footer');
 
@@ -20,22 +21,22 @@ function highlightLink() {
 
   // compensate for if window has been scrolled
   highlight.style.left = `${linkCoords.left + window.scrollX}px`;
-  highlight.style.top = `${linkCoords.top - footerCords.top + window.scrollY}px`;
+  highlight.style.top = `${linkCoords.top - footerCoords.top + window.scrollY}px`;
 }
 
 
-const batman = document.getElementById('batman-logo');
-console.log(batman);
-const sticker = document.getElementById('sticker');
+function grabElementId() {
+  // childNode[1] is used because the img is the second child inside the p element of class 'logo-caption'
+  let logoId = this.childNodes[1].id;
+  let game = logoId.slice(0,(logoId.length - 5));
 
-batman.addEventListener("mousedown", event => {
-  sticker.src = "media/images/sticker-batman-blue.png";
-  document.body.style.backgroundImage = "url('media/images/dark-transparent-background.png'), url('media/images/batman-background.jpg')";
-});
-
-
+  sticker.src = `media/images/sticker-${game}-blue.png`;
+  document.body.style.backgroundImage = `url('media/images/dark-transparent-background.png'), url('media/images/${game}-background.jpg')`;
+}
 
 
 
 // when mouse moves over each element in "logos"
 logos.forEach(event => event.addEventListener('mouseenter', highlightLink));
+// this changes background and sticker when user clicks on any of the logos (or captions)
+logos.forEach(event => event.addEventListener('click', grabElementId));
