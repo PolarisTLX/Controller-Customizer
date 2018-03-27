@@ -31,9 +31,19 @@ function grabElementId() {
   let game = logoId.slice(0,(logoId.length - 5));
 
   sticker.src = `media/images/sticker-${game}-blue.png`;
-  document.body.style.backgroundImage = `url('media/images/dark-transparent-background.png'), url('media/images/${game}-background.jpg')`;
+  document.body.style.backgroundImage = `
+ url('media/images/dark-transparent-background.png'), url('media/images/${game}-background.jpg')`;
+  // document.body.style.backgroundImage += ""
 }
 
+const colors = document.querySelectorAll('.colors');
+
+function changeColor() {
+  let color = this.id
+  document.body.style.backgroundImage = `url('media/images/${color}-transparent-background.png')`
+}
+
+colors.forEach(event => event.addEventListener('click', changeColor));
 
 
 // when mouse moves over each element in "logos"
