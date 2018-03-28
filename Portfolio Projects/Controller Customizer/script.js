@@ -25,6 +25,7 @@ function highlightLink() {
   // compensate for if window has been scrolled
   highlight.style.left = `${linkCoords.left-5 + window.scrollX}px`;
   highlight.style.top = `${linkCoords.top-5 - footerCoords.top + window.scrollY}px`;
+  highlight.style.display = `block`;
 }
 
 

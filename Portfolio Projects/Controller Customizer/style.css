@@ -6,24 +6,6 @@ body {
   /* background-attachment: fixed; */
 }
 
-/* body::after {
-  content: "";
-  background: url("media/images/mass-effect-background.jpg");
-  opacity: 0.4;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  z-index: -1;
-} */
-
-/* NOTE THIS NEEDS FIXING */
-/*this is just to reduce opacity of background images*/
-/* .background-overlay {
-  background-color: rgba(31,31,31,0.1);
-} */
-
 #controller, #sticker, #sticker-logos {
   position: fixed;
   top: 50%;
@@ -32,10 +14,41 @@ body {
   /* margin: auto; */
   height: 15em;
 }
+
 #sticker-logos {
   margin-top: 1.6em;
   height: 1.9em;
   -webkit-filter: hue-rotate(50deg);
+}
+
+.color-container {
+  position: fixed;
+  top: 65%;
+  left: 33.33%;
+}
+
+.colors {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  margin: 0.5em;
+}
+
+.blue {
+  background-color: blue;
+}
+.pink {
+  background-color: hotpink;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.white {
+  background-color: white;
 }
 
 .footer {
@@ -43,8 +56,8 @@ body {
   position: fixed; /* Fixed instead of absolute fixes the scrolling issue. */
   bottom: 0;
   width: 100%;
-  padding-top: 50px;
-  padding-bottom:100px;
+  padding-top: 3em;
+  padding-bottom: 4em;
 }
 .logo {
   display: block;
@@ -71,7 +84,7 @@ body {
   transition: all 0.2s;
   position: absolute;
   background: rgba(256, 256, 256, 0.6);
-  display: block;
+  display: none;
   /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
   z-index: -1;
   /* border-radius: 5px; */
