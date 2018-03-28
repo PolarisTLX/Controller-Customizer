@@ -43,6 +43,7 @@ function grabElementId() {
   document.body.style.backgroundImage = current_background.join(",");
 // this for the logo that sits on top of the sticker
   stickerLogo.src = `media/images/${game}-logo.png`;
+  stickerLogo.style.visibility = "visible";
 }
 
 const colors = document.querySelectorAll('.colors');

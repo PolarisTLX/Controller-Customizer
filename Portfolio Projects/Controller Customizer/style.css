@@ -14,11 +14,14 @@ body {
   /* margin: auto; */
   height: 15em;
 }
-
+#sticker {
+  visibility: hidden;
+}
 #sticker-logos {
   margin-top: 1.6em;
   height: 1.9em;
   /* -webkit-filter: hue-rotate(50deg); */
+  visibility: hidden;
 }
 .logo {
 
