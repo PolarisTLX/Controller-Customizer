@@ -20,6 +20,9 @@ body {
   height: 1.9em;
   /* -webkit-filter: hue-rotate(50deg); */
 }
+.logo {
+
+}
 
 .color-container {
   position: fixed;
@@ -45,7 +48,7 @@ body {
   background-color: red;
 }
 .green {
-  background-color: green;
+  background-color: rgb(15, 207, 35);
 }
 .white {
   background-color: white;

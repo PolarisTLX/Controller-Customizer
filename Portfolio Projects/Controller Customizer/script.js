@@ -1,5 +1,6 @@
 // const logos = document.getElementsByClassName("logo-caption");
 const logos = document.querySelectorAll('.logo-caption');
+const logoColor = document.querySelectorAll('.logo');
 // this for the logo that sits on top of the sticker
 const stickerLogo = document.querySelector('#sticker-logos');
 console.log(stickerLogo);
@@ -45,7 +46,26 @@ const colors = document.querySelectorAll('.colors');
 
 function changeColor() {
   let color = this.id
-  document.body.style.backgroundImage = `url('media/images/${color}-transparent-background.png')`
+  document.body.style.backgroundImage = `url('media/images/${color}-transparent-background.png')`;
+  let hue_degree;
+  switch (color) {
+    case "pink":
+      hue_degree = 70
+      break;
+    case "blue":
+      hue_degree = 0
+      break;
+    case "red":
+      hue_degree = 130
+      break;
+    case "green":
+      hue_degree = 280
+      break;
+    // default:
+  }
+  // stickerLogo.style.-webkit-filter = ` hue-rotate(${hue-degree}deg)`;
+  stickerLogo.style.webkitFilter = `hue-rotate(${hue_degree}deg)`;
+  logoColor.forEach(element => element.style.webkitFilter = `hue-rotate(${hue_degree}deg)`);
 }
 
 colors.forEach(event => event.addEventListener('click', changeColor));
