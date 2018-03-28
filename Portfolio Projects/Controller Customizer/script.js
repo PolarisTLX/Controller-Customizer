@@ -1,4 +1,6 @@
 // const logos = document.getElementsByClassName("logo-caption");
+document.body.style.backgroundImage = 'url("media/images/dark-transparent-background.png"), url("media/images/mass-effect-background.jpg")';
+console.log(document.body.style.backgroundImage);
 const logos = document.querySelectorAll('.logo-caption');
 const logoColor = document.querySelectorAll('.logo');
 // this for the logo that sits on top of the sticker
@@ -36,30 +38,42 @@ function grabElementId() {
   let game = logoId.slice(0,(logoId.length - 5));
 
   // sticker.src = `media/images/sticker-${game}-blue.png`;
-  document.body.style.backgroundImage = `
- url('media/images/dark-transparent-background.png'), url('media/images/${game}-background.jpg')`;
+  let current_background = document.body.style.backgroundImage.split(",");
+  current_background[current_background.length-1] = `url('media/images/${game}-background.jpg')`;
+  document.body.style.backgroundImage = current_background.join(",");
 // this for the logo that sits on top of the sticker
   stickerLogo.src = `media/images/${game}-logo.png`;
 }
 
 const colors = document.querySelectorAll('.colors');
 
+
 function changeColor() {
-  let color = this.id
-  document.body.style.backgroundImage = `url('media/images/${color}-transparent-background.png')`;
+  let color = this.id;
+
+  let current_background = document.body.style.backgroundImage.split(",");
+
+  if (current_background.length > 2) {
+    current_background[0] = `url('media/images/${color}-transparent-background.png')`;
+  } else {
+    current_background.unshift(`url('media/images/${color}-transparent-background.png')`);
+  }
+
+  document.body.style.backgroundImage = current_background.join(",");
+
   let hue_degree;
   switch (color) {
     case "pink":
-      hue_degree = 70
+      hue_degree = 70;
       break;
     case "blue":
-      hue_degree = 0
+      hue_degree = 0;
       break;
     case "red":
-      hue_degree = 130
+      hue_degree = 130;
       break;
     case "green":
-      hue_degree = 280
+      hue_degree = 280;
       break;
     // default:
   }
