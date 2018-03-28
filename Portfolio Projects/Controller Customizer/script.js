@@ -1,5 +1,7 @@
 // const logos = document.getElementsByClassName("logo-caption");
 const logos = document.querySelectorAll('.logo-caption');
+const stickerLogo = document.querySelector('#sticker-logos');
+console.log(stickerLogo);
 //console.log(logos);
 //console.log(logos[0]);
 
@@ -30,10 +32,11 @@ function grabElementId() {
   let logoId = this.childNodes[1].id;
   let game = logoId.slice(0,(logoId.length - 5));
 
-  sticker.src = `media/images/sticker-${game}-blue.png`;
+  // sticker.src = `media/images/sticker-${game}-blue.png`;
   document.body.style.backgroundImage = `
  url('media/images/dark-transparent-background.png'), url('media/images/${game}-background.jpg')`;
-  // document.body.style.backgroundImage += ""
+
+  stickerLogo.src = `media/images/${game}-logo.png`;
 }
 
 const colors = document.querySelectorAll('.colors');
