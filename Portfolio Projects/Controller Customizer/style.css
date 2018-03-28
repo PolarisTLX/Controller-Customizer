@@ -18,7 +18,7 @@ body {
 #sticker-logos {
   margin-top: 1.6em;
   height: 1.9em;
-  -webkit-filter: hue-rotate(50deg);
+  /* -webkit-filter: hue-rotate(50deg); */
 }
 
 .color-container {
