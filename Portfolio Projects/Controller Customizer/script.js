@@ -1,5 +1,6 @@
 // const logos = document.getElementsByClassName("logo-caption");
 const logos = document.querySelectorAll('.logo-caption');
+// this for the logo that sits on top of the sticker
 const stickerLogo = document.querySelector('#sticker-logos');
 console.log(stickerLogo);
 //console.log(logos);
@@ -35,7 +36,7 @@ function grabElementId() {
   // sticker.src = `media/images/sticker-${game}-blue.png`;
   document.body.style.backgroundImage = `
  url('media/images/dark-transparent-background.png'), url('media/images/${game}-background.jpg')`;
-
+// this for the logo that sits on top of the sticker
   stickerLogo.src = `media/images/${game}-logo.png`;
 }
 
