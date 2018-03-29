@@ -1,11 +1,11 @@
 // const logos = document.getElementsByClassName("logo-caption");
 document.body.style.backgroundImage = 'url("media/images/dark-transparent-background.png"), url("media/images/mass-effect-background.jpg")';
-console.log(document.body.style.backgroundImage);
+// console.log(document.body.style.backgroundImage);
 const logos = document.querySelectorAll('.logo-caption');
 const logoColor = document.querySelectorAll('.logo');
 // this for the logo that sits on top of the sticker
 const stickerLogo = document.querySelector('#sticker-logos');
-console.log(stickerLogo);
+// console.log(stickerLogo);
 //console.log(logos);
 //console.log(logos[0]);
 
@@ -32,6 +32,7 @@ function highlightLink() {
 }
 
 
+// THIS FUNCTION CHANGES THE STICKER LOGO AND THE BACKGROUND IMAGE
 function grabElementId() {
   // childNode[1] is used because the img is the second child inside the p element of class 'logo-caption'
   let logoId = this.childNodes[1].id;
@@ -44,11 +45,12 @@ function grabElementId() {
 // this for the logo that sits on top of the sticker
   stickerLogo.src = `media/images/${game}-logo.png`;
   stickerLogo.style.visibility = "visible";
+  sticker.style.visibility = "visible";
 }
 
 const colors = document.querySelectorAll('.colors');
 
-
+// THIS FUNCTION CHANGES THE COLOR OF THE LOGOS, THE STICKER LOGOS & THE BACKGROUND GRADIENT
 function changeColor() {
   let color = this.id;
 
@@ -81,6 +83,7 @@ function changeColor() {
   // stickerLogo.style.-webkit-filter = ` hue-rotate(${hue-degree}deg)`;
   stickerLogo.style.webkitFilter = `hue-rotate(${hue_degree}deg)`;
   logoColor.forEach(element => element.style.webkitFilter = `hue-rotate(${hue_degree}deg)`);
+  controller.style.webkitFilter = `hue-rotate(${hue_degree}deg)`;
 }
 
 colors.forEach(event => event.addEventListener('click', changeColor));
