@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width , initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--NOTE NEEDS ATTENTION --><!-- Chrome Tab logo!  called Favicon -->
     <link rel="icon" type="image/png" href="media/images/controller.png">
@@ -12,6 +12,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- RESPONSIVE CSS FOR SMALLER SCREEN SIZES -->
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+
 
     <title>Controller Customizer</title>
   </head>
@@ -54,7 +58,8 @@
 <footer class="footer navbar-fixed-bottom">
   <div class="container-fluid">
     <div class="row logo-container">
-      <div class="col-md-10 offset-md-1">
+      <!-- !!! IMPORTANT !!!   "mx-auto" KEY  TO CENTERING WITH BOOTSTRAP 4 !!!!!!!!!!!!!! -->
+      <div class="mx-auto">
         <p class="logo-caption">
           <img id="batman-logo" class ="logo img-fluid float" src="media/images/batman-logo.png" alt="Batman Logo">
           Batman

@@ -71,9 +71,10 @@ body {
   display: block;
   margin: auto;
   height: 3em;
+  /* display: en; */
 }
 .logo-caption {
-  color: rgba(256, 256, 256, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   float: left;
   text-align: center;
   margin: 0 2em;
@@ -94,7 +95,7 @@ body {
 .highlight {
   transition: all 0.2s;
   position: absolute;
-  background: rgba(256, 256, 256, 0.6);
+  background: rgba(255, 255, 255, 0.6);
   display: none;
   /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
   z-index: -1;
@@ -109,11 +110,18 @@ body {
 .highlight::before {
   width: 100%;
   bottom: 100%;
-  border-bottom: 15px solid  rgba(256, 256, 256, 0.6);
+  border-bottom: 15px solid  rgba(255, 255, 255, 0.6);
   /* border-radius: 5px; */
 }
 .highlight::after {
   width: 100%;
   top: 100%;
-  border-top: 15px solid  rgba(256, 256, 256, 0.6);
+  border-top: 15px solid  rgba(255, 255, 255, 0.6);
 }
+
+
+/* @media only screen and (max-width: 768px) {
+  #controller {
+    height: 6em;
+  }
+} */

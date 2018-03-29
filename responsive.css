@@ -1,0 +1,14 @@
+/* for small devices: phones */
+@media only screen and (max-width: 502px) {
+  .logo {
+    display: none !important;
+  }
+
+}
+
+/* for small tablets */
+@media only screen and (max-width: 768px) {
+  .footer {
+    background-color: red;
+  }
+}
