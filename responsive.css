@@ -1,14 +1,39 @@
 /* for small devices: phones */
-@media only screen and (max-width: 502px) {
+@media only screen and (max-width: 1006px) {
   .logo {
-    display: none !important;
+      height: 2em;
   }
-
+  .footer {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+  /* #controller, #sticker, #sticker-logos {
+    height: 8em;
+  } */
 }
 
-/* for small tablets */
-@media only screen and (max-width: 768px) {
-  .footer {
-    background-color: red;
+@media only screen and (max-width: 870px) {
+  .logo {
+    height: 1em;
   }
+  .logo-caption {
+    font-size: 0.75em;
+  }
+  .footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .logo-caption {
+    color: rgba(255, 255, 255, 0);
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 502px) {
+  .logo {
+    height: 1em;
+  }
+
 }

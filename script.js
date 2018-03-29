@@ -1,5 +1,5 @@
 // const logos = document.getElementsByClassName("logo-caption");
-document.body.style.backgroundImage = 'url("media/images/dark-transparent-background.png"), url("media/images/mass-effect-background.jpg")';
+// document.body.style.backgroundImage = 'url("media/images/dark-transparent-background.png"), url("media/images/PS4-background.jpg")';
 // console.log(document.body.style.backgroundImage);
 const logos = document.querySelectorAll('.logo-caption');
 const logoColor = document.querySelectorAll('.logo');
