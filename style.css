@@ -8,18 +8,19 @@ body {
 
 #controller, #sticker, #sticker-logos {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
+  /* THIS COMPENSATES FOR IMAGE SIZE TO KEEP IT CENTERED (moves top-left corner)*/
   transform: translate(-50%, -50%);
   /* margin: auto; */
-  height: 15em;
+  height: 12em;
 }
 #sticker {
   visibility: hidden;
 }
 #sticker-logos {
-  margin-top: 1.6em;
-  height: 1.9em;
+  margin-top: 1.3em;
+  height: 1.5em;
   /* -webkit-filter: hue-rotate(50deg); */
   visibility: hidden;
 }
@@ -29,15 +30,16 @@ body {
 
 .color-container {
   position: fixed;
-  top: 65%;
+  top: 54%;
   left: 33.33%;
 }
 
 .colors {
   display: inline-block;
-  height: 1em;
-  width: 1em;
+  height: 1.3em;
+  width: 1.3em;
   border-radius: 50%;
+  border: solid 1.5px grey;
   margin: 0.5em;
 }
 
@@ -81,7 +83,10 @@ body {
   -webkit-filter: none;
 }
 .logo-container {
-  margin: 0 3%;
+  /* display: inline; */
+  width: 100%;
+  /* margin: 0 auto; */
+  /* margin: 0 10% 0 10%; */
 }
 
 
