@@ -18,6 +18,14 @@
   .logo-caption {
     top: 90%;
   }
+  #controller, #sticker, #sticker-logos {
+    top: 33%;
+    /* width: 70%; */
+  }
+  /* #sticker-logos {
+    margin-top: 3.3%;
+    width: 8.4%;
+  } */
 }
 
 @media only screen and (max-width: 768px) and (orientation:portrait) {
