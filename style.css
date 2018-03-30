@@ -13,14 +13,17 @@ body {
   /* THIS COMPENSATES FOR IMAGE SIZE TO KEEP IT CENTERED (moves top-left corner)*/
   transform: translate(-50%, -50%);
   /* margin: auto; */
-  height: 12em;
+  width: 50%;
+  /* height: 12em; */
 }
 #sticker {
   visibility: hidden;
 }
 #sticker-logos {
-  margin-top: 1.3em;
-  height: 1.5em;
+  margin-top: 2.3%;
+  width: 6%;
+  /* max-height: 1.5em; */
+  /* height: 1.5em; */
   /* -webkit-filter: hue-rotate(50deg); */
   visibility: hidden;
 }
@@ -30,8 +33,10 @@ body {
 
 .color-container {
   position: fixed;
-  top: 54%;
-  left: 33.33%;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 20%; */
 }
 
 .colors {
