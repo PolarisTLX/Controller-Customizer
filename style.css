@@ -66,7 +66,7 @@ body {
   background-color: rgb(30, 30, 30);
   position: fixed; /* Fixed instead of absolute fixes the scrolling issue. */
   bottom: 0;
-  height: 20%;
+  height: 30%;
   width: 100%;
   padding-top: 3em;
   padding-bottom: 4em;
@@ -86,6 +86,36 @@ body {
   width: 12%;
 }
 
+.logo-caption p {
+  margin-bottom: 0;
+}
+
+#batman-caption {
+  margin-top: 1%;
+  font-size: 100%;
+}
+#destiny-caption {
+  margin-top: 4%;
+  font-size: 100%;
+}
+#mass-effect-caption {
+  margin-top: -4%;
+  font-size: 100%;
+}
+#skyrim-caption {
+  margin-top: 0%;
+  font-size: 100%;
+}
+#transformers-caption {
+  margin-top: 2%;
+  font-size: 100%;
+}
+#ps4-caption {
+  margin-top: 3%;
+  font-size: 100%;
+}
+
+
 /* POSITIONING ALL THE LOGOS IN THE FOOTER */
 #batman-footer {
   left: 10%;
@@ -103,6 +133,7 @@ body {
   left: 70%;
 }
 #ps4-footer {
+  padding-top: 1.5%;
   left: 85%;
 }
 /* END OF ALL FOOTER LOGOS */
