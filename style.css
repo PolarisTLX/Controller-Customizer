@@ -80,6 +80,7 @@ body {
   -webkit-filter: invert(50%);
   /* this is passed to each footer-logo */
   position: fixed;
+  /* This is the height of all the logos in the footer: */
   top: 85%;
   /* THIS COMPENSATES FOR IMAGE SIZE TO KEEP IT CENTERED (moves top-left corner)*/
   transform: translate(-50%, -50%);

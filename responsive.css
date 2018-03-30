@@ -37,4 +37,36 @@
     margin-top: 3.3%;
     width: 8.4%;
   }
+  .logo-caption {
+    width: 20%;
+  }
+
+
+  /* POSITIONING ALL THE LOGOS IN THE FOOTER */
+  #batman-footer {
+    top: 80%;
+    left: 15%;
+  }
+  #destiny-footer {
+    top: 80%;
+    left: 42%;
+  }
+  #mass-effect-footer {
+    top: 80%;
+    left: 67.7%;
+  }
+  #skyrim-footer {
+    top: 92%;
+    left: 15%;
+  }
+  #transformers-footer {
+    top: 92%;
+    left: 42%;
+  }
+  #ps4-footer {
+    top: 92%;
+    left: 67.7%;
+    padding-top: 1.5%;
+  }
+  /* END OF ALL FOOTER LOGOS */
 }
