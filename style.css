@@ -1,7 +1,7 @@
 body {
   background-image: url("media/images/dark-transparent-background.png"), url("media/images/PS4-background.jpg");
-  /* background-color: rgb(30, 30, 30); */
-  background-color: brown;
+  background-color: rgb(30, 30, 30);
+  /* background-color: brown; */
   background-size: cover;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
