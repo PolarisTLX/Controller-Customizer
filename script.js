@@ -24,7 +24,7 @@ function highlightLink() {
   const linkCoords = this.getBoundingClientRect();
 
   highlight.style.width = `${linkCoords.width+10}px`;
-  highlight.style.height = `${linkCoords.height+10}px`;
+  highlight.style.height = `${linkCoords.height}px`;
 
   // compensate for if window has been scrolled
   highlight.style.left = `${linkCoords.left-5 + window.scrollX}px`;

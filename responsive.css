@@ -1,39 +1,32 @@
 /* for small devices: phones */
-@media only screen and (max-width: 1006px) {
+
+@media only screen and (max-width: 768px) {
+  .logo-caption p {
+    display: none;
+  }
   .logo {
-      height: 2em;
+    margin-bottom: 10px;
   }
-  .footer {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-  }
-  /* #controller, #sticker, #sticker-logos {
-    height: 8em;
-  } */
 }
 
-@media only screen and (max-width: 870px) {
-  .logo {
-    height: 1em;
+
+/* REDUCE THE FOOTER SIZE AND LOWER THE FOOTER LOGO WHEN IN LANDSCAPE ON A MOBILE DEVICE */
+@media only screen and (max-width: 768px) and (orientation:landscape) {
+  .footer {
+    height: 15%;
   }
   .logo-caption {
-    font-size: 0.75em;
-  }
-  .footer {
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
-}
-@media only screen and (max-width: 630px) {
-  .logo-caption {
-    color: rgba(255, 255, 255, 0);
-    margin: 0;
+    top: 90%;
   }
 }
 
-@media only screen and (max-width: 502px) {
-  .logo {
-    height: 1em;
+@media only screen and (max-width: 768px) and (orientation:portrait) {
+  #controller, #sticker, #sticker-logos {
+    top: 40%;
+    width: 70%;
   }
-
+  #sticker-logos {
+    margin-top: 3.3%;
+    width: 8.4%;
+  }
 }
