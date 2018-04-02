@@ -43,10 +43,10 @@ body {
 
 .colors {
   display: inline-block;
-  height: 1.3em;
-  width: 1.3em;
+  height: 1.0em;
+  width: 1.0em;
   border-radius: 50%;
-  border: solid 1.5px grey;
+  /* border: solid 1.5px grey; */
   margin: 0.5em;
 }
 

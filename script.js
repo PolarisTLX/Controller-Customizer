@@ -55,6 +55,14 @@ const colors = document.querySelectorAll('.colors');
 // THIS FUNCTION CHANGES THE COLOR OF THE LOGOS, THE STICKER LOGOS & THE BACKGROUND GRADIENT
 function changeColor() {
   let color = this.id;
+  colors.forEach(element => {
+      element.style.height = "1.0em";
+      element.style.width = "1.0em";
+      // element.style.borderColor = "grey";
+  });
+  this.style.height = "1.3em";
+  this.style.width = "1.3em";
+  // this.style.borderColor = "white";
 
   let current_background = document.body.style.backgroundImage.split(",");
 
