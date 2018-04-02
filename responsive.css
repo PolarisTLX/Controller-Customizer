@@ -16,7 +16,7 @@
     height: 15%;
   }
   .logo-caption {
-    top: 90%;
+    top: 85%;
   }
   #controller, #sticker, #sticker-logos {
     top: 33%;
@@ -29,6 +29,9 @@
 }
 
 @media only screen and (max-width: 768px) and (orientation:portrait) {
+  .footer {
+    height: 33.3%;
+  }
   #controller, #sticker, #sticker-logos {
     top: 40%;
     width: 70%;
@@ -38,35 +41,39 @@
     width: 8.4%;
   }
   .logo-caption {
-    width: 20%;
+    width: 18%;
   }
 
 
   /* POSITIONING ALL THE LOGOS IN THE FOOTER */
   #batman-footer {
-    top: 80%;
-    left: 15%;
+    top: 75%;
+    left: 17%;
   }
   #destiny-footer {
-    top: 80%;
-    left: 42%;
+    top: 75%;
+    left: 44%;
   }
   #mass-effect-footer {
-    top: 80%;
-    left: 67.7%;
+    top: 75%;
+    left: 69%;
   }
   #skyrim-footer {
-    top: 92%;
-    left: 15%;
+    top: 88%;
+    left: 17%;
   }
   #transformers-footer {
-    top: 92%;
-    left: 42%;
+    top: 88%;
+    left: 44%;
   }
   #ps4-footer {
-    top: 92%;
-    left: 67.7%;
+    top: 88%;
+    left: 69%;
     padding-top: 1.5%;
   }
   /* END OF ALL FOOTER LOGOS */
+
+  .copyright {
+    top: 95.5%;
+  }
 }

@@ -33,6 +33,11 @@ function highlightLink() {
   highlight.style.display = `block`;
 }
 
+// To prevent the highlight from being out of place when user rotates phone or general window resize:
+window.addEventListener('resize', function(event){
+  highlight.style.display = "none";
+});
+
 
 // THIS FUNCTION CHANGES THE STICKER LOGO AND THE BACKGROUND IMAGE
 function grabElementId() {

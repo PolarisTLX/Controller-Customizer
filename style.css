@@ -190,16 +190,11 @@ body {
   position: fixed;
   top: 94%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-45%, -8%);
   color: rgb(52, 56, 89);
   font-size: 0.8em;
 }
-/* .line {
-  display: inline-block;
-  width: 100px;
-  height: 1px;
-  background-color: #000;
-} */
+
 
 
 /* FOLLOW ALONG HIGHLIGHT  */
