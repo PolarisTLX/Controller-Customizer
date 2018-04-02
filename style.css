@@ -11,6 +11,22 @@ body {
   /* background-attachment: fixed; */
 }
 
+.company-logo {
+  /* display: inline; */
+  position: fixed;
+  color: lightgrey;
+  top: 8%;
+  left: 15%;
+  /* transform: translate(-50%, -50%); */
+}
+
+#d-pad {
+  height: 1em;
+  -webkit-filter: invert(80%);
+  display: inline-block;
+  margin-top: -0.25em;
+}
+
 #controller, #sticker, #sticker-logos {
   position: fixed;
   top: 40%;
@@ -85,10 +101,10 @@ body {
   /* this is passed to each footer-logo */
   position: fixed;
   /* This is the height of all the logos in the footer: */
-  top: 85%;
+  top: 82%;
   /* THIS COMPENSATES FOR IMAGE SIZE TO KEEP IT CENTERED (moves top-left corner)*/
   transform: translate(-50%, -50%);
-  width: 12%;
+  width: 8%;
 }
 
 .logo-caption p {
@@ -168,6 +184,22 @@ body {
   /* margin: 0 auto; */
   /* margin: 0 10% 0 10%; */
 }
+
+/* COPYRIGHT */
+.copyright {
+  position: fixed;
+  top: 94%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(52, 56, 89);
+  font-size: 0.8em;
+}
+/* .line {
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background-color: #000;
+} */
 
 
 /* FOLLOW ALONG HIGHLIGHT  */
