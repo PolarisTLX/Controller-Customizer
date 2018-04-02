@@ -1,6 +1,10 @@
 body {
-  background-image: url("media/images/dark-transparent-background.png"), url("media/images/PS4-background.jpg");
-  background-color: rgb(30, 30, 30);
+  /* NOTE This is set in the JavaScript
+  background-image: url("media/images/dark-transparent-stripe-background.png"),
+                    url("media/images/dark-transparent-background.png"),
+                    url("media/images/PS4-background.jpg");
+  */
+  background-color: rgb(52, 56, 89);
   /* background-color: brown; */
   background-size: cover;
   background-repeat: no-repeat;
@@ -63,7 +67,7 @@ body {
 }
 
 .footer {
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(33, 36, 59);
   position: fixed; /* Fixed instead of absolute fixes the scrolling issue. */
   bottom: 0;
   height: 30%;

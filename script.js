@@ -1,6 +1,7 @@
 // const logos = document.getElementsByClassName("logo-caption");
 // This is required to give the background a starting position for all the functions to behave properly.
-document.body.style.backgroundImage = 'url("media/images/dark-transparent-background.png"), url("media/images/PS4-background.jpg")';
+document.body.style.backgroundImage = 'url("media/images/dark-transparent-stripe-background.png"), ' +
+                                      'url("media/images/dark-transparent-background.png"), ' + 'url("media/images/PS4-background.jpg")';
 // console.log(document.body.style.backgroundImage);
 const logos = document.querySelectorAll('.logo-caption');
 const logoColor = document.querySelectorAll('.logo');
@@ -57,7 +58,7 @@ function changeColor() {
 
   let current_background = document.body.style.backgroundImage.split(",");
 
-  if (current_background.length > 2) {
+  if (current_background.length > 3) {
     current_background[0] = `url('media/images/${color}-transparent-background.png')`;
   } else {
     current_background.unshift(`url('media/images/${color}-transparent-background.png')`);
