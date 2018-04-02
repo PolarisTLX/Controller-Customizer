@@ -47,16 +47,16 @@ body {
 }
 
 .blue {
-  background-color: blue;
+  background-color: rgb(0,113,244);
 }
 .pink {
-  background-color: hotpink;
+  background-color: rgb(201,54,242);
 }
 .red {
-  background-color: red;
+  background-color: rgb(255,48,80);
 }
 .green {
-  background-color: rgb(15, 207, 35);
+  background-color: rgb(15,207,35);
 }
 .white {
   background-color: white;

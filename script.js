@@ -65,6 +65,28 @@ function changeColor() {
 
   document.body.style.backgroundImage = current_background.join(",");
 
+  // topColor bar element:
+  let topShade;
+  switch (color) {
+    case "pink":
+      topShade = "rgb(201,54,242)";
+      break;
+    case "blue":
+      topShade = "rgb(0,113,244)";
+      break;
+    case "red":
+      topShade = "rgb(255,48,80)";
+      break;
+    case "green":
+      topShade = "rgb(0,152,27)";
+      break;
+    // default:
+  }
+  topColor.style.backgroundColor = `${topShade}`;
+  topColor.style.height = "3px";
+  topColor.style.width = "100%";
+
+
   let hue_degree;
   switch (color) {
     case "pink":
