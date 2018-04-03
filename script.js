@@ -1,7 +1,10 @@
 // const logos = document.getElementsByClassName("logo-caption");
 // This is required to give the background a starting position for all the functions to behave properly.
-document.body.style.backgroundImage = 'url("media/images/dark-transparent-stripe-background.png"), ' +
-                                      'url("media/images/dark-transparent-background.png"), ' + 'url("media/images/PS4-background.jpg")';
+document.body.style.backgroundImage =
+                                      'url("media/images/blue-transparent-background.png"), ' +
+                                      'url("media/images/dark-transparent-stripe-background.png"), ' +
+                                      'url("media/images/dark-transparent-background.png"), ' +
+                                      'url("media/images/PS4-background.jpg")';
 // console.log(document.body.style.backgroundImage);
 const logos = document.querySelectorAll('.logo-caption');
 const logoColor = document.querySelectorAll('.logo');
@@ -71,11 +74,11 @@ function changeColor() {
 
   let current_background = document.body.style.backgroundImage.split(",");
 
-  if (current_background.length > 3) {
+  // if (current_background.length > 3) {
     current_background[0] = `url('media/images/${color}-transparent-background.png')`;
-  } else {
-    current_background.unshift(`url('media/images/${color}-transparent-background.png')`);
-  }
+  // } else {
+    // current_background.unshift(`url('media/images/${color}-transparent-background.png')`);
+  // }
 
   document.body.style.backgroundImage = current_background.join(",");
 
@@ -97,8 +100,8 @@ function changeColor() {
     // default:
   }
   topColor.style.backgroundColor = `${topShade}`;
-  topColor.style.height = "3px";
-  topColor.style.width = "100%";
+  // topColor.style.height = "3px";
+  // topColor.style.width = "100%";
 
 
   let hue_degree;
@@ -119,7 +122,7 @@ function changeColor() {
   }
   // stickerLogo.style.-webkit-filter = ` hue-rotate(${hue-degree}deg)`;
   stickerLogo.style.webkitFilter = `hue-rotate(${hue_degree}deg)`;
-  logoColor.forEach(element => element.style.webkitFilter = `hue-rotate(${hue_degree}deg)`);
+  // logoColor.forEach(element => element.style.webkitFilter = `hue-rotate(${hue_degree}deg)`);
   controller.style.webkitFilter = `hue-rotate(${hue_degree}deg)`;
 }
 
