@@ -57,7 +57,7 @@ body {
 
 .color-container {
   position: fixed;
-  top: 58%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* width: 20%; */
@@ -95,7 +95,7 @@ body {
   background-color: rgb(33, 36, 59);
   position: fixed; /* Fixed instead of absolute fixes the scrolling issue. */
   bottom: 0;
-  height: 30%;
+  height: 33%;
   width: 100%;
   padding-top: 3em;
   padding-bottom: 4em;
@@ -110,10 +110,17 @@ body {
   /* this is passed to each footer-logo */
   position: fixed;
   /* This is the height of all the logos in the footer: */
-  top: 82%;
+  top: 80%;
   /* THIS COMPENSATES FOR IMAGE SIZE TO KEEP IT CENTERED (moves top-left corner)*/
   transform: translate(-50%, -50%);
-  width: 8%;
+  width: 7%;
+}
+
+.logo {
+  width: 80%
+}
+#PS4-logo {
+  margin-top: -25px;
 }
 
 .logo-caption p {
@@ -172,7 +179,7 @@ body {
 
 /* change the logos to be white on hover as requested */
 .logo-caption:hover{
-  -webkit-filter: saturate(0) brightness(300);
+  -webkit-filter: saturate(0) brightness(50);
 }
 .logo-container {
   /* display: inline; */
@@ -189,7 +196,7 @@ body {
 /* COPYRIGHT */
 .copyright {
   position: fixed;
-  top: 94%;
+  top: 92%;
   left: 50%;
   transform: translate(-45%, -8%);
   color: rgb(52, 56, 89);
@@ -202,11 +209,11 @@ body {
 .highlight {
   transition: all 0.2s;
   position: absolute;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(49, 49, 82, 1);
   display: none;
   /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
   z-index: -1;
-  /* border-radius: 5px; */
+  border-radius: 5px;
   margin-bottom: -10px;
 }
 .highlight::before, .highlight::after {
@@ -214,17 +221,21 @@ body {
   position: absolute;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
+  border-radius: 1000%;
+  /* overflow: hidden; */
 }
 .highlight::before {
+  /* padding-top: 25px; */
+  /* offset */
   width: 100%;
-  bottom: 100%;
-  border-bottom: 15px solid  rgba(255, 255, 255, 0.6);
+  bottom: 90%;
+  border-bottom: 15px solid  rgba(49, 49, 82, 1);
   /* border-radius: 5px; */
 }
 .highlight::after {
   width: 100%;
-  top: 100%;
-  border-top: 15px solid  rgba(255, 255, 255, 0.6);
+  top: 90%;
+  border-top: 15px solid  rgba(49, 49, 82, 1);
 }
 
 

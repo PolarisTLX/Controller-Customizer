@@ -12,16 +12,32 @@
 
 /* REDUCE THE FOOTER SIZE AND LOWER THE FOOTER LOGO WHEN IN LANDSCAPE ON A MOBILE DEVICE */
 @media only screen and (max-width: 768px) and (orientation:landscape) {
-  .footer {
-    height: 15%;
-  }
-  .logo-caption {
-    top: 85%;
-  }
+
   #controller, #sticker, #sticker-logos {
     top: 33%;
     /* width: 70%; */
   }
+  .color-container {
+    top: 55%;
+  }
+  .footer {
+    height: 33%;
+  }
+  .logo-caption {
+    top: 82%;
+  }
+
+  .highlight::before {
+    bottom: 70%;
+  }
+  .highlight::after {
+    top: 70%;
+  }
+
+  #PS4-logo {
+    margin-top: -12px;
+  }
+
   /* #sticker-logos {
     margin-top: 3.3%;
     width: 8.4%;
@@ -29,19 +45,38 @@
 }
 
 @media only screen and (max-width: 768px) and (orientation:portrait) {
-  .footer {
-    height: 33.3%;
-  }
+
   #controller, #sticker, #sticker-logos {
-    top: 40%;
+    top: 37%;
     width: 70%;
   }
   #sticker-logos {
     margin-top: 3.3%;
     width: 8.4%;
   }
+  .color-container {
+    top: 54%;
+  }
+  .footer {
+    height: 37%;
+  }
+
   .logo-caption {
-    width: 18%;
+    width: 10%;
+  }
+  .logo {
+    width: 100%;
+  }
+
+  /* .highlight {
+    height: 100px;
+  } */
+
+  .highlight::before {
+    bottom: 80%;
+  }
+  .highlight::after {
+    top: 80%;
   }
 
 

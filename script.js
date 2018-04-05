@@ -27,13 +27,27 @@ function highlightLink() {
   const footerCoords = footer.getBoundingClientRect();
   const linkCoords = this.getBoundingClientRect();
 
-  highlight.style.width = `${linkCoords.width+10}px`;
-  highlight.style.height = `${linkCoords.height}px`;
+  // media query for highlight dimentions on smaller screens
+  if (window.innerWidth < 768) {
+
+    highlight.style.width = `${linkCoords.width+40}px`;
+    highlight.style.height = `${linkCoords.height+10}px`;
+
+    // compensate for if window has been scrolled
+    highlight.style.left = `${linkCoords.left-20 + window.scrollX}px`;
+    highlight.style.top = `${linkCoords.top-10 - footerCoords.top + window.scrollY}px`;
+    highlight.style.display = `block`;
+
+  } else {
+
+  highlight.style.width = `${linkCoords.width+40}px`;
+  highlight.style.height = `${linkCoords.height+30}px`;
 
   // compensate for if window has been scrolled
-  highlight.style.left = `${linkCoords.left-5 + window.scrollX}px`;
-  highlight.style.top = `${linkCoords.top-5 - footerCoords.top + window.scrollY}px`;
+  highlight.style.left = `${linkCoords.left-20 + window.scrollX}px`;
+  highlight.style.top = `${linkCoords.top-15 - footerCoords.top + window.scrollY}px`;
   highlight.style.display = `block`;
+  }
 }
 
 // To prevent the highlight from being out of place when user rotates phone or general window resize:
