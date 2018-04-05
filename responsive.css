@@ -21,10 +21,10 @@
     top: 55%;
   }
   .footer {
-    height: 33%;
+    height: 30%;  /* THIS NEVER SEEMS TO RESPOND!!! */
   }
   .logo-caption {
-    top: 82%;
+    top: 80%;
   }
 
   .highlight::before {
@@ -34,14 +34,13 @@
     top: 70%;
   }
 
+  .logo {
+    width: 100%;
+  }
   #PS4-logo {
     margin-top: -12px;
   }
 
-  /* #sticker-logos {
-    margin-top: 3.3%;
-    width: 8.4%;
-  } */
 }
 
 @media only screen and (max-width: 768px) and (orientation:portrait) {
@@ -62,10 +61,13 @@
   }
 
   .logo-caption {
-    width: 10%;
+    width: 14%;
   }
   .logo {
     width: 100%;
+  }
+  #PS4-logo {
+    margin-top: 0px;
   }
 
   /* .highlight {
