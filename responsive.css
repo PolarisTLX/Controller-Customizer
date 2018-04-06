@@ -21,7 +21,7 @@
     top: 55%;
   }
   .footer {
-    height: 30%;  /* THIS NEVER SEEMS TO RESPOND!!! */
+    height: 29%;  /* THIS NEVER SEEMS TO RESPOND FOR LANDSCAPE!!! */
   }
   .logo-caption {
     top: 80%;
@@ -36,6 +36,24 @@
 
   .logo {
     width: 100%;
+  }
+  #batman-footer {
+    left: 8%;
+  }
+  #destiny-footer {
+    left: 23%;
+  }
+  #mass-effect-footer {
+    left: 38%;
+  }
+  #skyrim-footer {
+    left: 53%;
+  }
+  #transformers-footer {
+    left: 68%;
+  }
+  #ps4-footer {
+    left: 82%;
   }
   #PS4-logo {
     margin-top: -12px;
@@ -85,27 +103,27 @@
   /* POSITIONING ALL THE LOGOS IN THE FOOTER */
   #batman-footer {
     top: 75%;
-    left: 17%;
+    left: 13%;
   }
   #destiny-footer {
     top: 75%;
-    left: 44%;
+    left: 40%;
   }
   #mass-effect-footer {
     top: 75%;
-    left: 69%;
+    left: 65.5%;
   }
   #skyrim-footer {
     top: 88%;
-    left: 17%;
+    left: 13%;
   }
   #transformers-footer {
     top: 88%;
-    left: 44%;
+    left: 40%;
   }
   #ps4-footer {
     top: 88%;
-    left: 69%;
+    left: 65.5%;
     padding-top: 1.5%;
   }
   /* END OF ALL FOOTER LOGOS */
