@@ -20,6 +20,11 @@
   .color-container {
     top: 55%;
   }
+
+  #AddToBasket {
+    top: 71%;
+  }
+
   .footer {
     height: 29%;  /* THIS NEVER SEEMS TO RESPOND FOR LANDSCAPE!!! */
   }
@@ -74,6 +79,11 @@
   .color-container {
     top: 54%;
   }
+
+  #AddToBasket {
+    top: 63%;
+  }
+
   .footer {
     height: 37%;
   }

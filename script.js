@@ -55,6 +55,7 @@ window.addEventListener('resize', function(event){
   highlight.style.display = "none";
 });
 
+const addButton = document.querySelector('#AddToBasket');
 
 // THIS FUNCTION CHANGES THE STICKER LOGO AND THE BACKGROUND IMAGE
 function grabElementId() {
@@ -70,6 +71,10 @@ function grabElementId() {
   stickerLogo.src = `media/images/${game}-logo.png`;
   stickerLogo.style.visibility = "visible";
   sticker.style.visibility = "visible";
+
+  addButton.className = "btn btn-primary";
+  addButton.innerHTML = "Add to Basket";
+  // addButton.ClassList.add('btn-primary');
 }
 
 const colors = document.querySelectorAll('.colors');
