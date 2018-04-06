@@ -13,6 +13,10 @@
 /* REDUCE THE FOOTER SIZE AND LOWER THE FOOTER LOGO WHEN IN LANDSCAPE ON A MOBILE DEVICE */
 @media only screen and (max-width: 768px) and (orientation:landscape) {
 
+  .worldShipping {
+    left: 83%;
+  }
+
   #controller, #sticker, #sticker-logos {
     top: 33%;
     /* width: 70%; */
@@ -68,6 +72,11 @@
 
 @media only screen and (max-width: 768px) and (orientation:portrait) {
 
+  .worldShipping {
+    left: 66%;
+    top: 13.5%;
+  }
+
   #controller, #sticker, #sticker-logos {
     top: 37%;
     width: 70%;
@@ -117,11 +126,11 @@
   }
   #destiny-footer {
     top: 75%;
-    left: 40%;
+    left: 41.5%;
   }
   #mass-effect-footer {
     top: 75%;
-    left: 65.5%;
+    left: 66.6%;
   }
   #skyrim-footer {
     top: 88%;
@@ -129,11 +138,11 @@
   }
   #transformers-footer {
     top: 88%;
-    left: 40%;
+    left: 41.5%;
   }
   #ps4-footer {
     top: 88%;
-    left: 65.5%;
+    left: 66.6%;
     padding-top: 1.5%;
   }
   /* END OF ALL FOOTER LOGOS */

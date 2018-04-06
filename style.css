@@ -138,6 +138,10 @@ body {
   font-size: 10px;
 }
 
+/* To force remove border/shadow around button when clicked */
+#AddToBasket:focus {
+  box-shadow: none;
+}
 
 .footer {
   background-color: rgb(33, 36, 59);

@@ -66,6 +66,7 @@ addButton.addEventListener('click', clickAdd);
 function clickAdd() {
   if (addButton.className == "btn btn-primary") {
     addButton.className = "btn btn-secondary";
+    // addButton.style.border = "none";
     addButton.innerHTML =  '&nbsp;&nbsp;&nbsp;<i id="AddToBasketIcon" class="fas fa-chevron-circle-down"></i> &nbsp; Select sticker';
     numItems += 1;
     cartDollars += 5;
