@@ -16,6 +16,9 @@
     <!-- RESPONSIVE CSS FOR SMALLER SCREEN SIZES -->
     <link rel="stylesheet" type="text/css" href="responsive.css">
 
+    <!-- FONT AWESOME V5 ('fas fa-...' is default) -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
 
     <title>Controller Customizer</title>
   </head>
@@ -30,6 +33,13 @@
   <div class="company-logo">
     <img id="d-pad" class="img-fluid" src="media/images/d-pad-logo.png" alt="D-pad image">
     Play<strong>Stickerz</strong>
+  </div>
+
+  <button type="button" class="btn btn-primary" id="EmptyBasket">Empty Basket</button>
+
+  <div class="worldShipping">
+    Free world shipping
+    <i id="AddToBasketIcon" class="far fa-check-circle"></i>
   </div>
 
 
@@ -58,12 +68,9 @@
 </div>
 
 <div class="container-fluid">
-  <button type="button" class="btn btn-secondary" id="AddToBasket">Select sticker</button>
+  <button type="button" class="btn btn-secondary" id="AddToBasket"> &nbsp;&nbsp;&nbsp;<i id="AddToBasketIcon" class="fas fa-chevron-circle-down
+"></i> &nbsp; Select sticker</button>
 </div>
-
-<button type="button" class="btn btn-primary" id="EmptyBasket">Empty Basket
-  <span class="badge   badge-light">4</span>
-</button>
 
 
 <footer class="footer navbar-fixed-bottom">

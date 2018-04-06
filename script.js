@@ -56,6 +56,24 @@ window.addEventListener('resize', function(event){
 });
 
 const addButton = document.querySelector('#AddToBasket');
+const addButtonIcon = document.querySelector('#AddToBasketIcon');
+const emptyButton = document.querySelector('#EmptyBasket');
+let numItems = 0;
+let cartDollars = 0;
+
+addButton.addEventListener('click', clickAdd);
+
+function clickAdd() {
+  if (addButton.className == "btn btn-primary") {
+    addButton.className = "btn btn-secondary";
+    addButton.innerHTML =  '&nbsp;&nbsp;&nbsp;<i id="AddToBasketIcon" class="fas fa-chevron-circle-down"></i> &nbsp; Select sticker';
+    numItems += 1;
+    cartDollars += 5;
+    emptyButton.innerHTML = `$${cartDollars} &nbsp; Basket &nbsp;<span class="badge pull-right">${numItems}</span>`;
+  }
+}
+
+
 
 // THIS FUNCTION CHANGES THE STICKER LOGO AND THE BACKGROUND IMAGE
 function grabElementId() {
@@ -73,8 +91,9 @@ function grabElementId() {
   sticker.style.visibility = "visible";
 
   addButton.className = "btn btn-primary";
-  addButton.innerHTML = "Add to Basket";
-  // addButton.ClassList.add('btn-primary');
+  addButton.innerHTML = '&nbsp;&nbsp;&nbsp;<i id="AddToBasketIcon" class="fas fa-shopping-basket"></i> &nbsp; Add To Basket';
+
+  // addButtonIcon.className = "fas fa-shopping-basket";
 }
 
 const colors = document.querySelectorAll('.colors');
