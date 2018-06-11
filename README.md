@@ -2,7 +2,7 @@
 
 # Controller-Customizer Product Page- 
 
-This website was a PDF-to-HTML project to realise an original design from Dribbble, which can be found here for comparison: 
+This website was a PSD-to-HTML project to realize an original design from Dribbble, which can be found here for comparison: 
 
 [Dribbble Playstickerz Concept](https://dribbble.com/shots/2129345-Playstickerz-concept)
 
